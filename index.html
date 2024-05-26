@@ -196,25 +196,72 @@
             </div>
         </div>
     </section>
-    <section class="container p-5 bg-secondary">
-        <div class="button-section p-3">
-            <div class="btn-group btn-group-sm btn-group-vertical row g-2">
-                <div class="col">
-                    <button class="btn btn-info">Learn More</button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-info">Learn More</button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-info">Learn More</button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-info">Learn More</button>
+
+    <section class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                <div class="form-container bg-info p-4 rounded-4">
+                    <form action="#" class="form">
+                        <div class="mb-3 row">
+                            <label for="firstName" class="col-12 col-md-4 form-label">First Name</label>
+                            <div class="col-12 col-md-8">
+                                <input type="text" name="firstName" id="firstName" class="form-control" placeholder="Enter Your First Name">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="lastName" class="col-12 col-md-4 form-label">Last Name</label>
+                            <div class="col-12 col-md-8">
+                                <input type="text" name="lastName" id="lastName" class="form-control" placeholder="Enter Your Last Name">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="email" id="email" class="form-label col-12 col-md-4">Email Address</label>
+                            <div class="col-12 col-md-8">
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email Address">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div>
+                                <input type="checkbox" name="checkbox" id="checkbox" class="form-check-input">
+                                <label for="checkbox" class="form-check-label mx-2 text-primary">Accept Terms and Conditions</label>
+                            </div>
+                            
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary text-white">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="container my-5">
+        <div class="container bg-secondary p-5">
+            <p>Let's Build the <span class="text-info" data-toggle="tooltip" title="Sign Up today and get 60% discount" data-placement="top">Career Plan</span> Together and get our dream job with perfect job opportunity.</p>
+
+            <button type="button" class="btn btn-primary" data-toggle="popover" title="Standard Checklist" data-content="You have to fill up the form first and after completing the form we will send you a assignment which should be submitted within 24 hours">Check Details</button>
+            <button type="button" class="btn btn-secondary"
+            data-toggle="popover" data-placement="right"
+            data-custom-class="custom-popover"
+            data-title="Custom popover"
+            data-content="This popover is themed via CSS variables.">
+        Custom popover
+            </button>
+        </div>
+    </section>
+
+
+
+
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
     
 
 
@@ -224,6 +271,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 
 
+    
     
 
     
